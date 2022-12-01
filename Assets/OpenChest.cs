@@ -6,6 +6,7 @@ public class OpenChest : MonoBehaviour
 {
 
     public Animator DoorAnim;
+    public Light MyLight;
 
     // Start is called before the first frame update
     void Start()
@@ -14,9 +15,18 @@ public class OpenChest : MonoBehaviour
 
     }
 
+    void OnTriggerEnter(Collider collision)
+    {
+        if (collision.CompareTag("chestkey")) {
+            DoorAnim.SetTrigger("KeyOpen");
+            Debug.Log("it worked");
+            MyLight.enabled = !MyLight.enabled;
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
-        DoorAnim.SetTrigger("KeyOpen");
+        //DoorAnim.SetTrigger("KeyOpen");
     }
 }
