@@ -4,10 +4,21 @@ using UnityEngine;
 
 public class MyTime : MonoBehaviour
 {
+    public GameObject sphere;
+
     // Start is called before the first frame update
     void Start()
     {
         
+    }
+
+    void OnTriggerEnter(Collider collision)
+    {
+        if (collision.CompareTag("ball"))
+        {
+            Debug.Log("it worked");
+            sphere.GetComponent<Rigidbody>().isKinematic = false;
+        }
     }
 
     // Update is called once per frame
