@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OpenDoor : MonoBehaviour
-{ 
-    public Animator DoorAnim;
+public class Darkness : MonoBehaviour
+{
+    public GameObject sphere;
 
     // Start is called before the first frame update
     void Start()
@@ -14,18 +14,16 @@ public class OpenDoor : MonoBehaviour
 
     void OnTriggerEnter(Collider collision)
     {
-        if (collision.CompareTag("doorkey"))
+        if (collision.CompareTag("ball"))
         {
-            DoorAnim.SetTrigger("dooropen");
             Debug.Log("it worked");
-            gameObject.GetComponent<BoxCollider>().enabled = false;
-
+            sphere.GetComponent<Rigidbody>().isKinematic = false;
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        //DoorAnim.SetTrigger("open");
+        
     }
 }
