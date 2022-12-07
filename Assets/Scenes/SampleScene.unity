@@ -962,22 +962,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1180669087212174, guid: 4109b3168856786478684a665517c52b, type: 3}
   m_PrefabInstance: {fileID: 802926221}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &366618066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 366618062}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e74fbd16ccfe51e478e26f7e917c19b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sphere: {fileID: 1361509494}
-  audioSource: {fileID: 1444028985}
-  clip: {fileID: 8300000, guid: f1f0ad1b8819b6d419add72f9871ac6d, type: 3}
-  volume: 0.5
 --- !u!65 &366618067
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -991,6 +975,26 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.08, y: 0.03, z: 0.08}
   m_Center: {x: 0, y: 0.3, z: 0.000000022351742}
+--- !u!114 &366618068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366618062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7cee484f4520fc4cb0024feed548ace, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sphere: {fileID: 1361509494}
+  audioSource: {fileID: 1444028985}
+  clip: {fileID: 8300000, guid: f1f0ad1b8819b6d419add72f9871ac6d, type: 3}
+  volume: 0.5
+  CrawlerAnim: {fileID: 535255397}
+  Crawler: {fileID: 1435342575}
+  Player: {fileID: 294802617}
+  Target: {fileID: 114840560}
 --- !u!1 &380304215
 GameObject:
   m_ObjectHideFlags: 0
@@ -3460,7 +3464,7 @@ BoxCollider:
   m_GameObject: {fileID: 1214274124}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10, y: 2.220446e-16, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
@@ -4653,22 +4657,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1031450013100714, guid: be05f035c9997da4bb6eabfbef319f74, type: 3}
   m_PrefabInstance: {fileID: 1404315781}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1523673611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1523673607}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d39aa4933f310aa4ea37540d2657b72f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sphere: {fileID: 1361509494}
-  audioSource: {fileID: 1444028985}
-  clip: {fileID: 8300000, guid: f1f0ad1b8819b6d419add72f9871ac6d, type: 3}
-  volume: 0.5
 --- !u!65 &1523673612
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4682,6 +4670,26 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.08, y: 0.03, z: 0.08}
   m_Center: {x: 0, y: 0.3, z: 0.000000022351742}
+--- !u!114 &1523673613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523673607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7cee484f4520fc4cb0024feed548ace, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sphere: {fileID: 1361509494}
+  audioSource: {fileID: 1444028985}
+  clip: {fileID: 8300000, guid: f1f0ad1b8819b6d419add72f9871ac6d, type: 3}
+  volume: 0.5
+  CrawlerAnim: {fileID: 535255397}
+  Crawler: {fileID: 1435342575}
+  Player: {fileID: 294802617}
+  Target: {fileID: 114840560}
 --- !u!1001 &1534488455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6756,22 +6764,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1148008505575544, guid: d87855e92779df345be94a62e4eab2f8, type: 3}
   m_PrefabInstance: {fileID: 100425584}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2097879410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2097879406}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f9e41965286ca347a40b1e69ccce0a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sphere: {fileID: 1361509494}
-  audioSource: {fileID: 1444028985}
-  clip: {fileID: 8300000, guid: f1f0ad1b8819b6d419add72f9871ac6d, type: 3}
-  volume: 0.5
 --- !u!65 &2097879411
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6785,6 +6777,26 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.08, y: 0.03, z: 0.08}
   m_Center: {x: 0, y: 0.3, z: 0.000000022351742}
+--- !u!114 &2097879412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097879406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7cee484f4520fc4cb0024feed548ace, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sphere: {fileID: 1361509494}
+  audioSource: {fileID: 1444028985}
+  clip: {fileID: 8300000, guid: f1f0ad1b8819b6d419add72f9871ac6d, type: 3}
+  volume: 0.5
+  CrawlerAnim: {fileID: 535255397}
+  Crawler: {fileID: 1435342575}
+  Player: {fileID: 294802617}
+  Target: {fileID: 114840560}
 --- !u!1 &2117281101
 GameObject:
   m_ObjectHideFlags: 0
@@ -6890,7 +6902,7 @@ BoxCollider:
   m_GameObject: {fileID: 2117281101}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 10, y: 2.220446e-16, z: 10}
   m_Center: {x: 0, y: 0, z: 0}
