@@ -8,6 +8,10 @@ public class Darkness : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip clip;
     public float volume=0.5f;
+    public Animator CrawlerAnim;
+    public GameObject Crawler;
+    public GameObject Player;
+    public Transform Target;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +26,9 @@ public class Darkness : MonoBehaviour
             Debug.Log("it worked");
             sphere.GetComponent<Rigidbody>().isKinematic = false;
             audioSource.PlayOneShot(clip, volume);
+            Crawler.GetComponent<SkinnedMeshRenderer>().enabled = true;
+            CrawlerAnim.SetTrigger("Wrong");
+            Player.transform.position = Target.transform.position;
         }
     }
 
