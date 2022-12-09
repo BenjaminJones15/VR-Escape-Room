@@ -7,7 +7,7 @@ public class Wrong : MonoBehaviour
     public GameObject sphere;
     public AudioSource audioSource;
     public AudioClip clip;
-    public float volume=0.5f;
+    public float volume=1f;
     public Animator CrawlerAnim;
     public GameObject Crawler;
     public GameObject Player;
@@ -24,7 +24,7 @@ public class Wrong : MonoBehaviour
         if (collision.CompareTag("ball"))
         {
             Debug.Log("it worked");
-            sphere.GetComponent<Rigidbody>().isKinematic = false;
+            sphere.GetComponent<MeshRenderer>().enabled = false;
             audioSource.PlayOneShot(clip, volume);
             Crawler.GetComponent<SkinnedMeshRenderer>().enabled = true;
             CrawlerAnim.SetTrigger("Wrong");
